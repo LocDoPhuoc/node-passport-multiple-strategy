@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>３D足場 - 管理リスト画面 - Client</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<script src="../js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+	<header class="_blue">
+		<h1>足場プランオンマップ【管理画面】</h1>
+
+		<div class="rightArea">
+			<div class="companyName"></div>
+			<a href="/logout">ログアウト</a>
+		</div>
+	</header>
+
+	<div id="contents">
+		<div class="list">
+			<button class="btn_m _green _ico _signUp">新規登録</button>
+
+			<table>
+				<tr>
+					<th class="day">登録日時</th>
+					<th class="name">クライアント名</th>
+					<th class="id">ログインID</th>
+					<th class="address">所在地</th>
+					<th class="tell">連絡先</th>
+					<th class="matter">補足事項</th>
+					<th class="update">更新</th>
+					<th class="delete">削除</th>
+				</tr>
+				<tr>
+					<td class="day">2019/10/15<span class="time">10:15</span></td>
+					<td class="name">株式会社あいうえお</td>
+					<td class="id">abcdefghij</td>
+					<td class="address">東京都港区港南1-2-3 ABCDEFG</td>
+					<td class="tell">03-1234-5678</td>
+					<td class="matter">2020年4月1日よりサービス利用開始</td>
+					<td class="update"><button class="btn_s _green">変更</button></td>
+					<td class="delete"><button class="btn_s _red">削除</button></td>
+				</tr>
+				<tr>
+					<td class="day">2019/10/15<span class="time">10:15</span></td>
+					<td class="name">株式会社あいうえお</td>
+					<td class="id">abcdefghij</td>
+					<td class="address">東京都港区港南1-2-3 ABCDEFG</td>
+					<td class="tell">03-1234-5678</td>
+					<td class="matter">2019年7月1日から2020年6月30日までの間デモとしてご利用する予定</td>
+					<td class="update"><button class="btn_s _green">変更</button></td>
+					<td class="delete"><button class="btn_s _red">削除</button></td>
+				</tr>
+				<tr>
+					<td class="day">2019/10/15<span class="time">10:15</span></td>
+					<td class="name">株式会社あいうえお</td>
+					<td class="id">abcdefghij</td>
+					<td class="address">東京都港区港南1-2-3 ABCDEFG</td>
+					<td class="tell">03-1234-5678</td>
+					<td class="matter"></td>
+					<td class="update"><button class="btn_s _green">変更</button></td>
+					<td class="delete"><button class="btn_s _red">削除</button></td>
+				</tr>
+				<tr>
+					<td class="day">2019/10/15<span class="time">10:15</span></td>
+					<td class="name">株式会社あいうえお</td>
+					<td class="id">abcdefghij</td>
+					<td class="address">東京都港区港南1-2-3 ABCDEFG</td>
+					<td class="tell">03-1234-5678</td>
+					<td class="matter">2019年7月1日から2020年6月30日までの間デモとしてご利用する予定</td>
+					<td class="update"><button class="btn_s _green">変更</button></td>
+					<td class="delete"><button class="btn_s _red">削除</button></td>
+				</tr>
+				<tr>
+					<td class="day">2019/10/15<span class="time">10:15</span></td>
+					<td class="name">株式会社あいうえお</td>
+					<td class="id">abcdefghij</td>
+					<td class="address">東京都港区港南1-2-3 ABCDEFG</td>
+					<td class="tell">03-1234-5678</td>
+					<td class="matter"></td>
+					<td class="update"><button class="btn_s _green">変更</button></td>
+					<td class="delete"><button class="btn_s _red">削除</button></td>
+				</tr>
+				<tr>
+					<td class="day">2019/10/15<span class="time">10:15</span></td>
+					<td class="name">株式会社あいうえお</td>
+					<td class="id">abcdefghij</td>
+					<td class="address">東京都港区港南1-2-3 ABCDEFG</td>
+					<td class="tell">03-1234-5678</td>
+					<td class="matter">2020年4月1日よりサービス利用開始</td>
+					<td class="update"><button class="btn_s _green">変更</button></td>
+					<td class="delete"><button class="btn_s _red">削除</button></td>
+				</tr>
+				<tr>
+					<td class="day">2019/10/15<span class="time">10:15</span></td>
+					<td class="name">株式会社あいうえお</td>
+					<td class="id">abcdefghij</td>
+					<td class="address">東京都港区港南1-2-3 ABCDEFG</td>
+					<td class="tell">03-1234-5678</td>
+					<td class="matter">2020年4月1日よりサービス利用開始</td>
+					<td class="update"><button class="btn_s _green">変更</button></td>
+					<td class="delete"><button class="btn_s _red">削除</button></td>
+				</tr>
+				<tr>
+					<td class="day">2019/10/15<span class="time">10:15</span></td>
+					<td class="name">株式会社あいうえお</td>
+					<td class="id">abcdefghij</td>
+					<td class="address">東京都港区港南1-2-3 ABCDEFG</td>
+					<td class="tell">03-1234-5678</td>
+					<td class="matter">2020年4月1日よりサービス利用開始</td>
+					<td class="update"><button class="btn_s _green">変更</button></td>
+					<td class="delete"><button class="btn_s _red">削除</button></td>
+				</tr>
+				<tr>
+					<td class="day">2019/10/15<span class="time">10:15</span></td>
+					<td class="name">株式会社あいうえお</td>
+					<td class="id">abcdefghij</td>
+					<td class="address">東京都港区港南1-2-3 ABCDEFG</td>
+					<td class="tell">03-1234-5678</td>
+					<td class="matter">2020年4月1日よりサービス利用開始</td>
+					<td class="update"><button class="btn_s _green">変更</button></td>
+					<td class="delete"><button class="btn_s _red">削除</button></td>
+				</tr>
+				<tr>
+					<td class="day">2019/10/15<span class="time">10:15</span></td>
+					<td class="name">株式会社あいうえお</td>
+					<td class="id">abcdefghij</td>
+					<td class="address">東京都港区港南1-2-3 ABCDEFG</td>
+					<td class="tell">03-1234-5678</td>
+					<td class="matter">2020年4月1日よりサービス利用開始</td>
+					<td class="update"><button class="btn_s _green">変更</button></td>
+					<td class="delete"><button class="btn_s _red">削除</button></td>
+				</tr>
+			</table>
+
+			<div class="navArea">
+				<ul class="pageNav nav_green">
+					<li class="prev"><a href="#">前へ</a></li>
+					<li><a href="#">1</a></li>
+					<li><span class="selected">2</span></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><span>…</span></li>
+					<li><a href="#">99</a></li>
+					<li class="next"><a href="#">次へ</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+
+</html>

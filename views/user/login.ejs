@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>３D足場 - 管理ログイン画面</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/custom.css">
+	<script src="../js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+	<div id="contents">
+		<div class="login">
+			<h1 class="text_blue">
+				足場プランオンマップ
+			</h1>
+
+			<div class="loginForm">
+				<div class="login_ico_b">login</div>
+				<form method="post" action="/login" name="userLoginForm">
+					<input type="text" id="username" name="username" required placeholder="ユーザーID" />
+				
+					<input type="password" id="password" name="password" minlength="" required placeholder="パスワード"/>
+				</form>
+
+				<button class="btn_m _blue _ico _login user-login">ログイン</button>
+
+				<% if(error != ''){ %>
+					<div class="error-message"><%= error %></div>
+				<% } %>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+
+<script>
+	$(document).ready(function(){
+		$(".user-login").click(function(){
+			$("form[name='userLoginForm']").submit();
+		});
+	});
+</script>
+
+</html>

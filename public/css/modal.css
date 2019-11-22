@@ -1,0 +1,174 @@
+@charset 'utf-8';
+
+/*** modal
+******************************/
+#modal-overlay{
+	/*display:none;*/
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.5);
+	z-index:1;
+}
+
+#modal {
+	position: absolute;
+	z-index: 10;
+	font-size: 14px;
+}
+
+
+/*** modal 詳細画面
+****************************************/
+.modalContents {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	-webkit- transform: translateY(-50%) translateX(-50%);
+	display: none;
+	width: 630px;
+	max-width: calc(100% - 40px);
+	max-height: calc(100% - 40px);
+	border-radius: 4px;
+	background-color: #fff;
+	overflow-y: auto;
+}
+
+.modalContents.check {
+	width: 520px;
+}
+
+.contentsInner {
+	position: relative;
+	padding: 40px;
+}
+
+#modal .head-title {
+	display: block;
+	margin-bottom: 40px;
+	font-size: 18px;
+	text-align: center;
+}
+
+#modal .head-title:before {
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	padding-right: 8px;
+	vertical-align: middle;
+}
+
+.ico_new:before {
+	background: url(../img/SignUp.png) no-repeat;
+	background-size: 18px auto;
+}
+
+.ico_edit:before {
+	background: url(../img/Edit.png) no-repeat;
+	background-size: 18px auto;
+}
+
+.ico_edit_b:before {
+	background: url(../img/Edit_b.png) no-repeat;
+	background-size: 18px auto;
+}
+
+.ico_delete:before {
+	background: url(../img/Delete.png) no-repeat;
+	background-size: 18px auto;
+}
+
+.ico_delete_b:before {
+	background: url(../img/Delete_b.png) no-repeat;
+	background-size: 18px auto;
+}
+
+.ico_unlock:before {
+	background: url(../img/Unlock.png) no-repeat;
+	background-size: 18px auto;
+}
+
+.ico_reset:before {
+	background: url(../img/Reset.png) no-repeat;
+	background-size: 18px auto;
+}
+
+.ico_Camera:before {
+	background: url(../img/SurveillanceCamera.png) no-repeat;
+	background-size: 18px auto;
+}
+
+
+/*** list
+****************************************/
+#modal .list {
+	display: block;
+	/*overflow-y: auto;*/
+}
+
+#modal .list form ol li {
+	display: block;
+	margin: 20px 0;
+	padding: 0 10px 0 0;
+	text-align: right;
+	line-height: 20px;
+	white-space: nowrap;
+}
+
+#modal .list form ol li label {
+	margin: 0;
+}
+
+#modal .list form ol li input,
+#modal .list form ol li textarea {
+	display: inline-block;
+	width: calc(100% - 140px);
+	max-width: 400px;
+	padding: 0 5px;
+	vertical-align: middle;
+}
+
+#modal .list form ol li textarea {
+	height: 70px;
+	vertical-align: top;
+}
+
+#modal .list form ol li label.matter {
+	margin-top: 5px;
+}
+
+#modal .list form ol li .toggle-switch {
+	display: inline-block;
+	margin-right: calc(100% - 220px);
+	margin-left: 5px;
+	padding: 0;
+	vertical-align: middle;
+}
+
+#modal .list form ol li .toggle-switch input {
+	display: none;
+}
+
+#modal .list form ol li .toggle-switch label span {
+	left: 0;
+}
+
+#modal .list .text {
+	text-align: center;
+}
+
+#modal .btnArea {
+	display: table;
+	margin: auto;
+	padding-top: 30px;
+}
+
+#modal button {
+	width: 120px;
+	margin: 0 10px;
+}
+

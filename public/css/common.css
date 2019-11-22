@@ -1,0 +1,409 @@
+@charset 'utf-8';
+
+#contents {
+	position: relative;
+	display: block;
+	margin: 20px 83px;
+	overflow-y: auto;
+	height: 100%;
+}
+
+
+/*** header
+******************************/
+header {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 40px;
+	background-color: #333;
+	color: #fff;
+}
+
+header h1 {
+	padding: 0 20px;
+	font-size: 18px;
+	line-height: 40px;
+}
+
+header .rightArea {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: flex;
+	margin: 10px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+header .rightArea .companyName {
+
+}
+
+header .rightArea a {
+	margin: 0 0 0 20px;
+	padding: 0 10px 0 20px;
+	color: #fff;
+	border-left: 1px solid #fff;
+}
+
+header .rightArea a:before {
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	padding-right: 5px;
+	background: url(../img/Logout.png) no-repeat;
+	background-size: 14px 14px;
+	vertical-align: middle;
+}
+
+
+/*** login
+******************************/
+.login {
+	display: block;
+	width: 380px;
+	margin: auto;
+	text-align: center;
+}
+
+.login h1 {
+	display: block;
+	padding: 60px 0 80px 0;
+	font-size: 24px;
+}
+
+.login h1 span {
+	display: block;
+	font-size: 18px;
+}
+
+.login .loginForm {
+	padding: 40px;
+	background-color: #FAFAFA;
+	border: 1px solid #B7B7B7;
+	border-radius: 4px;
+}
+
+.login .loginForm .login_ico {
+	width: 38px;
+	height: 42px;
+	margin: auto;
+	padding-bottom: 20px;
+	background: url(../img/User_Login.png) no-repeat;
+	background-size: 38px 42px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.login .loginForm .login_ico_b {
+	width: 38px;
+	height: 42px;
+	margin: auto;
+	padding-bottom: 20px;
+	background: url(../img/User_Login_b.png) no-repeat;
+	background-size: 38px 42px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.login .loginForm form input {
+	width: 300px;
+	margin-top: 20px;
+}
+
+.login .loginForm button {
+	width: 160px;
+	margin-top: 40px;
+}
+
+
+/*** list
+******************************/
+.list button._signUp {
+	display: block;
+	width: 160px;
+	margin-left: auto; 
+}
+
+.list table {
+	width: 100%;
+	margin: 20px 0;
+	border: 1px solid #B7B7B7;
+	font-size: 12px;
+}
+
+.list table th {
+	background-color: #F8F8F8;
+	padding: 9px 10px;
+	line-height: 18px;
+	border: 1px solid #B7B7B7;
+	text-align: center;
+}
+
+.list table th.status { width: 50px; }
+.list table th.day { width: 80px; }
+.list table th.number { min-width: 80px; }
+.list table th.name { min-width: 90px; }
+.list table th.id { width: 70px; }
+.list table th.property { min-width: 100px; }
+.list table th.address { min-width: 100px; }
+.list table th.tell { width: 90px; }
+.list table th.matter { min-width: 80px; }
+.list table th.update,
+.list table th.delete,
+.list table th.browse { width: 50px; }
+
+.list table td {
+	padding: 3px 10px;
+	border: 1px solid #B7B7B7;
+	text-align: left;
+	font-size: 12px;
+}
+
+.list table td.status { }
+.list table td.day,
+.list table td.id,
+.list table td.number,
+.list table td.tell,
+.list table td.update,
+.list table td.delete,
+.list table td.browse { text-align: center; }
+.list table td .time {
+	display: block;
+	text-align: center;
+}
+.list table td.name { }
+.list table td.property { }
+.list table td.address { }
+.list table td.matter { }
+
+.list table td .toggle-switch.switch_s {
+	width: 54px;
+}
+.list table td .toggle-switch.switch_s label span:after{ /*sサイズ用*/
+	content: "非公開";
+	padding: 0 0 0 16px;
+}
+.list table td .toggle-switch.switch_s input[type="checkbox"]:checked + label span:after { /*sサイズ用*/
+	content: "公開";
+	padding: 0 20px 0 0;
+}
+.list table td .toggle-switch.switch_s input[type="checkbox"]:checked ~ #swImg {
+	transform: translateX(36px);
+}
+
+.list table td.browse .ico_link {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+	width: 18px;
+	height: 18px;
+	margin: auto;
+	border-radius: 0;
+	background: url(../img/Link.png) no-repeat;
+	background-size: 18px auto;
+}
+
+.navArea {
+	display: table;
+	margin: auto;
+}
+
+
+/*** list inner (search)
+******************************/
+.inner {
+	display: flex;
+}
+.list .search {
+	display: inline-block;
+}
+
+.list .search input {
+	width: 240px;
+	height: 30px;
+}
+
+.list .search button.search {
+	position: relative;
+	right: 35px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 30px;
+	height: 20px;
+	margin: 5px 0;
+	background: url(../img/Search.png) no-repeat;
+	background-size: 14px 14px;
+	background-position: 50%;
+	border-left: 1px solid #B7B7B7;
+	border-radius: 0;
+	vertical-align: top;
+}
+
+.inner p {
+	display: inline-block;
+	margin: auto;
+	margin-bottom: 0;
+	font-size: 14px;
+}
+
+
+/*** content
+******************************/
+.content h2 {
+	font-size: 18px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #157799;
+}
+
+.content h2.ico_edit_b:before {
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	padding-right: 8px;
+	vertical-align: middle;
+	background: url(../img/Edit_b.png) no-repeat;
+	background-size: 18px auto;
+}
+
+.content .section {
+	display: block;
+	margin: 20px 0;
+}
+
+.content .section .leftBox {
+	display: inline-block;
+	width: calc(100% - (50% + 20px));
+	padding-right: 20px;
+	float: left;
+	clear: both;
+}
+
+.content .section .rightBox {
+	display: inline-block;
+	width: calc(100% - (50% + 20px));
+	padding-left: 20px;
+}
+
+.section ol li {
+	display: table;
+	width: 100%;
+	padding: 5px 0;
+	font-size: 14px;
+	line-height: 30px;
+	border-top: 1px solid #B7B7B7;
+}
+
+.section ol li:last-child {
+	border-bottom: 1px solid #B7B7B7;
+}
+
+.section ol li .title {
+	display: table-cell;
+	width: 140px;
+	max-height: 100%;
+	min-height: 30px;
+	margin-right: 10px;
+	background: #F8F8F8;
+	text-align: center;
+	line-height: 30px;
+	vertical-align: middle;
+}
+
+.section ol li .title:before,
+.section ol li .title:after {
+	content: "";
+	width: 100%;
+	height: 5px;
+	display: block;
+}
+
+.section ol li .right_item {
+	display: table-cell;
+	width: calc(100% - 10px);
+	height: 100%;
+	margin-left: 10px;
+	padding: 0 10px;
+	line-height: 20px;
+	vertical-align: middle;
+}
+
+.section ol li .right_item a {
+	text-decoration: underline;
+	color: #157799;
+}
+
+.section ol li .right_item a:hover {
+	opacity: 0.7;
+}
+
+.section ol li .btnArea {
+	display: inline-block;
+	margin-left: auto;
+}
+
+.section ol li .btn_s {
+	width: auto;
+	min-width: 50px;
+	padding: 0 10px;
+}
+
+.content .section button.btn_m {
+	display: block;
+	margin: 20px auto 40px auto;
+}
+
+.section ol li.object .right_item {
+	display: inline-table;
+	padding: 8px 0;
+	border-bottom: 1px solid #B7B7B7;
+	text-align: right;
+}
+
+.section ol li.object .right_item:nth-child(1) {
+	padding-top: 3px;
+}
+
+.section ol li.object .right_item:last-child {
+	padding-bottom: 3px;
+	border-bottom: none;
+}
+
+.section ol li.object .right_item.loading {
+	color: #B7B7B7;
+	background-color: initial;
+	border-radius: 0;
+}
+
+.section ol li.object .right_item.read {
+	text-align: left;
+}
+
+.section ol li.object .right_item.read button {
+	margin-right: 10px;
+}
+
+.section ol li.object .right_item .fileName {
+	display: table-cell;
+	text-align: left;
+}
+
+.section ol li.object .right_item .btnArea:before {
+	content: "";
+	display: inline-block;
+	height: 24px;
+	width: 1px;
+	margin: 0 20px;
+	border-right: 1px solid #B7B7B7;
+	vertical-align: middle;
+}
+
+
+

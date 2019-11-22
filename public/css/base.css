@@ -1,0 +1,414 @@
+@charset 'utf-8';
+
+html {
+	width: 100%;
+	height: 100%;
+	color: #4A4A4A;
+	background-color: #FFF;
+	font-family: "Hiragino Kaku Gothic Pro", Meiryo;
+}
+
+body {
+	position: relative;
+	height: max-content;
+	font-size: 16px;
+	font-weight: 300;
+	z-index: 0;
+}
+
+
+/*** color pattern
+******************************/
+.text_green { color: #35AA66; }
+.text_blue { color: #157799; }
+
+
+/*** button
+******************************/
+button {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	border-radius: 15px;
+	color: #fff;
+	font-weight: 300;
+}
+
+button.btn_m._ico:before {
+	content: "";
+	position: absolute;
+	left: 8px;
+	top: 50%;
+	bottom: 50%;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin: auto;
+	vertical-align: middle;
+}
+
+._ico._login:before {
+	background: url(../img/Login.png) no-repeat;
+	background-size: 14px auto;
+	background-position: 0 0;
+}
+._ico._signUp:before {
+	background: url(../img/SignUp_Mini.png) no-repeat;
+	background-size: 14px auto;
+	background-position: 0 0;
+}
+
+button.btn_s {
+	width: 50px;
+	font-size: 12px;
+	line-height: 24px;
+}
+
+button.btn_m {
+	width: 240px;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+button.disable { opacity: 0.3; }
+
+button:hover { opacity: 0.7; }
+button:hover.disable {
+	opacity: 0.3;
+	cursor: default;
+}
+
+._green { background-color: #35AA66; }
+._blue { background-color: #157799; }
+._red { background-color: #DE4341; }
+._gray { background-color: #B7B7B7; }
+._black { background-color: #4A4A4A; }
+
+
+/*** form
+******************************/
+.formArea {
+	display: block;
+}
+
+form {
+	position: relative;
+}
+
+form p {
+	display: inline-block;
+}
+
+form label {
+	position: relative;
+	display: inline-block;
+	width: auto;
+	margin: 5px 0;
+	line-height: 23px;
+	vertical-align: middle;
+}
+
+form label span {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 11px;
+}
+
+form input, form select {
+	width: 200px;
+	padding: 0 5px;
+	background-color: #fff;
+	border: 1px solid #C9C9C9;
+	border-radius: 4px;
+	line-height: 28px;
+	vertical-align: middle;
+}
+
+form select {
+	padding: 0 20px 0 3px;
+	background: url(../img/select_arrow.png) no-repeat;
+	background-size: 10px 10px;
+	background-position: right 5px center;
+	cursor: pointer;
+}
+
+
+/*** Pagination
+******************************/
+.pageNav {
+	display: flex;
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.pageNav li {
+	display: inline-block;
+	margin: 0 5px;
+	padding: 0;
+}
+
+.pageNav li.prev,
+.pageNav li.next {
+	margin: 0 15px;
+}
+
+.pageNav li a,
+.pageNav li span {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background-color: #fff;
+	border: 1px solid #35AA66;
+	border-radius: 50%;
+	color: #35AA66;
+	font-size: 9px;
+	font-weight: bold;
+	line-height: 22px;
+	vertical-align: middle;
+}
+
+.pageNav li a:hover {
+	opacity: 0.7;
+}
+
+.pageNav li span {
+	cursor: default;
+}
+
+.nav_green li a,
+.nav_green li span {
+	border: 1px solid #35AA66;
+	color: #35AA66;	
+}
+.nav_blue li a,
+.nav_blue li span {
+	border: 1px solid #157799;
+	color: #157799;
+}
+
+.nav_green li span.selected {
+	background-color: #35AA66;
+	color: #fff;
+}
+
+.nav_blue li span.selected {
+	background-color: #157799;
+	color: #fff;
+}
+
+.pageNav .prev a,
+.pageNav .next a {
+	position: relative;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.pageNav .prev a:before {
+	content: "＜";
+	position: absolute;
+	left: -15px;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	padding-right: 22px;
+}
+
+.pageNav .next a:before {
+	content: "＞";
+	position: absolute;
+	left: -15px;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	padding-right: 22px;
+}
+
+.pageNav .prev.disable a,
+.pageNav .next.disable a {
+	opacity: 0.3;
+	cursor: default;
+}
+
+.pageNav .prev.disable a:hover,
+.pageNav .next.disable a:hover {
+	opacity: 0.3;
+}
+
+
+/*** tag
+******************************/
+.tag {
+	display: inline-block;
+	width: 70px;
+	background-color: #fff;
+	border: 1px solid #157799;
+	border-radius: 3px;
+	color: #157799;
+	font-size: 12px;
+	text-align: center;
+	line-height: 22px;
+}
+
+.tag._red {
+	width: 120px;
+	background-color: #fff;
+	border-color: #DE4341;
+	color: #DE4341;
+}
+
+.tag._gray {
+	background-color: #fff;
+	border-color: #B7B7B7;
+	color: #B7B7B7;
+}
+
+
+/*** toggle-switch
+******************************/
+/* === ボタンを表示するエリア === */
+.toggle-switch {
+	line-height: 30px;
+	letter-spacing: 0;
+	text-align: center;
+	font-size: 14px;
+	position: relative;
+	width: 90px;
+	background: #fff;
+}
+
+.toggle-switch.switch_s { /*sサイズ用*/
+	line-height: 18px;
+	width: 48px;
+}
+
+ /* === チェックボックス === */
+.toggle-switch input[type="checkbox"] { display: none; }
+
+ /* === チェックボックスのラベル（標準） === */
+.toggle-switch label {
+	display: block;
+	box-sizing: border-box;
+	height: 30px;
+	background-color: #B7B7B7;
+	border-radius: 15px;
+}
+
+.toggle-switch.switch_s label { /*sサイズ用*/
+	height: 18px;
+}
+
+.toggle-switch label span {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 30px;
+}
+
+.toggle-switch.switch_s label span { /*sサイズ用*/
+	font-size: 10px;
+	line-height: 18px;
+}
+
+ /* === チェックボックスのラベル（ONのとき） === */
+.toggle-switch input[type="checkbox"]:checked +label { background-color: #157799; }
+
+ /* === 表示する文字（標準） === */
+.toggle-switch label span:after{
+	content: "非公開";
+	padding: 0 0 0 30px;
+}
+.toggle-switch.switch_s label span:after{ /*sサイズ用*/
+	content: "OFF";
+	padding: 0 0 0 16px;
+}
+
+ /* === 表示する文字（ONのとき） === */
+.toggle-switch input[type="checkbox"]:checked + label span:after {
+	content: "公開";
+	padding: 0 40px 0 0;
+}
+.toggle-switch.switch_s input[type="checkbox"]:checked + label span:after { /*sサイズ用*/
+	content: "ON";
+	padding: 0 20px 0 0;
+}
+
+ /* === 丸部分のSTYLE（標準） === */
+.toggle-switch #swImg {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 5px;
+	left: 5px;
+	background-color: #fff;
+	border-radius: 25px;
+	transition: 0.2s;
+}
+.toggle-switch.switch_s #swImg { /*sサイズ用*/
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	top: 3px;
+	left: 3px;
+	background-color: #fff;
+	border-radius: 10px;
+	transition: 0.2s;
+}
+
+ /* === 丸部分のSTYLE（ONのとき） === */
+.toggle-switch input[type="checkbox"]:checked ~ #swImg {
+	transform: translateX(60px);
+	background: #fff;
+}
+.toggle-switch.switch_s  input[type="checkbox"]:checked ~ #swImg { /*sサイズ用*/
+	transform: translateX(30px);
+	background: #fff;
+}
+
+
+
+/*** loading
+******************************/
+.loading {
+	display: inline-block;
+	background-color: rgba(0,0,0,0.65);
+	width: auto;
+	padding: 10px;
+	border-radius: 25px;
+}
+
+.loading .load_circle{
+	position:relative;
+	display: inline-block;
+	width:20px; /* アニメーションのサイズ */
+	height:20px; /* アニメーションのサイズ */
+	margin: 0;
+}
+
+.loading .load_circle > DIV{
+	width:100%;
+	height:100%;
+	margin: 0;
+	border-radius:50%;
+	border:5px solid rgba(225,225,225,0.2); /* 枠線の太さとベースとなる色 */
+	border-top-color:#fff; /* 枠線の欠けた部分の色 */
+	animation: circle_rotate 1s linear 0s infinite; /* 一回転にかかる時間の指定 */
+}
+
+@keyframes circle_rotate{
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(360deg);
+	}
+}
+
+.loading span {
+	margin: 0 10px 0 15px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+}
+

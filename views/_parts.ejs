@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>３D足場 - パーツ</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+	<style type="text/css">
+		html { background-color: #fff; }
+		div.box { margin: 20px; }
+	</style>
+</head>
+
+<body>
+	<div class="contents">
+		<div class="innerWrap">
+
+			<!-- フォーム -->
+			<div class="box">
+				<form>
+					<label for="username">ラベル名</label>
+					<input type="text" id="username" name="username" required required placeholder="インプット名" />
+				</form>
+			</div>
+
+			<!-- ボタン(大) -->
+			<div class="box">
+				<button class="btn_m _green _ico _login">ログイン</button>
+				<button class="btn_m _green _ico _signUp">新規登録</button>
+				<br /><div style="margin-bottom: 10px;"></div>
+				<button class="btn_m _blue">ログイン</button>
+				<button class="btn_m _black">戻る</button>
+				<button class="btn_m _blue disable">ログイン</button>
+			</div>
+
+			<!-- ボタン(小) -->
+			<div class="box">
+				<button class="btn_s _green">変更</button>
+				<button class="btn_s _blue">変更</button>
+				<button class="btn_s _red">削除</button>
+			</div>
+
+			<!-- ページネーション(緑) -->
+			<div class="box">
+				<ul class="pageNav nav_green">
+					<li class="prev"><a href="#">前へ</a></li>
+					<li><a href="#">1</a></li>
+					<li><span class="selected">2</span></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><span>…</span></li>
+					<li><a href="#">99</a></li>
+					<li class="next"><a href="#">次へ</a></li>
+				</ul>
+			</div>
+
+			<!-- ページネーション(青) -->
+			<div class="box">
+				<ul class="pageNav nav_blue">
+					<li class="prev"><a href="#">前へ</a></li>
+					<li><span class="selected">1</span></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><span>…</span></li>
+					<li><a href="#">999</a></li>
+					<li class="next"><a href="#">次へ</a></li>
+				</ul>
+			</div>
+
+			<!-- タグ -->
+			<div class="box">
+				<div class="tag">配置済み</div>
+				<div class="tag _gray">未配置</div>
+				<div class="tag _red">データ読み込み中</div>
+			</div>
+
+			<!-- トグルスイッチ(大) -->
+			<div class="box">
+				<div class="toggle-switch switch_m">
+					<input type="checkbox" id="switch_m" checked>
+					<label for="switch_m"><span></span></label>
+					<div id="swImg"></div>
+				</div>
+			</div>
+
+			<!-- トグルスイッチ(小) -->
+			<div class="box">
+				<div class="toggle-switch switch_s">
+					<input type="checkbox" id="switch_s">
+					<label for="switch_s"><span></span></label>
+					<div id="swImg"></div>
+				</div>
+			</div>
+
+			<!-- ローディング -->
+			<div class="box">
+				<div class="loading">
+					<div class="load_circle">
+						<div></div>
+					</div>
+					<span>データ変換中</span>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+
+</html>
